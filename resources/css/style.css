@@ -1,0 +1,246 @@
+/* Base Styles ----- */
+* {
+  font-size: 18px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: helvetica;
+}
+
+/* Main Styles ----- */
+.main-banner {
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Header Styles ----- */
+nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+ul {
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  margin: 1rem;
+}
+
+header span {
+  margin: auto auto auto 1rem;
+
+}
+
+header img {
+  height: 1.5rem;
+  margin-rigth: 1rem;
+  margin-left: 2rem;
+}
+
+.statement {
+  display: flex;
+  margin: auto;
+  max-width: 960px;}
+
+.statement span {
+  background-color: white;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  position: relative;
+  top: 10rem;
+  margin-left: auto;
+  margin-right: -2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Services Section ---------- */
+
+.three-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.information {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.info-one {
+  max-width: 35%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.info-two {
+  max-width: 35%;
+}
+
+h2 {
+  background-color: cadetblue;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Footer ---------- */
+
+footer {
+  max-width: 960px;
+  background-color: azure;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  margin-top: 5rem;
+}
+
+footer span {
+  margin: auto auto auto 1rem;
+}
+
+footer img {
+  height: 1.5rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Media Queries ---------------- */
+
+@media only screen and (max-width: 1055px) {
+   .container {
+     max-width: 100%;
+     margin: auto;
+   }
+   .statement {
+     margin-right: 4rem;
+   }
+   .mobile-nav {
+     display: none;
+   }
+   .statement span {
+     font-size: 1.33rem;
+     padding: 0.75rem 4rem 0.75rem 4rem;
+   }
+   .main-banner {
+     padding-top: 0;
+     width: 100%;
+     height: 22rem;
+   }
+}
+
+@media only screen and (max-width: 470px) {
+  * {
+    font-size: 16px;
+  }
+  body {
+   margin: 0;
+ }
+ footer {
+   max-width: 100%;
+   justify-content: center;
+   margin: 0 auto;
+   padding-right: 4rem;
+ }
+ footer span {
+  display: none;  
+  }
+  footer img {
+
+  }
+  nav span {
+    display: none;
+  }
+  .main-banner {
+    height: 17rem;
+  }
+  .statement span {
+    top: 9rem;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .information {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .info-one {
+    max-width: 100%;
+  }
+  .info-two {
+    max-width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .statement {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .three-images {
+    flex-direction: column;
+  }
+  .main-banner {
+    background-position: 20%;
+  }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .statement {
+    margin-right: 4rem;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+  }
+  .statement span {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
+  }
+  .main-banner {
+    padding-top: 0;
+    width: 100%;
+    height: 22rem;
+  }
+}
